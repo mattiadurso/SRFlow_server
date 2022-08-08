@@ -49,7 +49,6 @@ datasets:
 dataroot_GT: ../../datasets/div2k-validation-modcrop8-gt
 dataroot_LR: ../../datasets/div2k-validation-modcrop8-x4
 model_path: ../experiments/train/models/latest_G.pth
-con
 heat: 0.9 # This is the standard deviation of the latent vectors
 
 #### network structures
