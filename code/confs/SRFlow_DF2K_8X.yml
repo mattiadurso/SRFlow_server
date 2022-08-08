@@ -20,7 +20,7 @@ use_tb_logger: true
 model: SRFlow
 distortion: sr
 scale: 8
-gpu_ids: [ 0 ]
+gpu_ids: [ 0, 2 ]
 
 #### datasets
 datasets:
@@ -33,7 +33,7 @@ datasets:
 
     use_shuffle: true
     n_workers: 3  # per GPU
-    batch_size: 16
+    batch_size: 8
     GT_size: 160
     use_flip: true
     color: RGB
@@ -94,8 +94,8 @@ train:
   lr_steps_rel: [ 0.5, 0.75, 0.9, 0.95 ]
   lr_gamma: 0.5
 
-  niter: 200000
-  val_freq: 40000
+  niter: 10000
+  val_freq: 2000
 
 #### validation settings
 val:
