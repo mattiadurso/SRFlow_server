@@ -20,15 +20,15 @@ use_tb_logger: true
 model: SRFlow
 distortion: sr
 scale: 8
-gpu_ids: [ 0, 2 ]
+gpu_ids: [ 0 ]
 
 #### datasets
 datasets:
   train:
     name: CelebA_160_tr
     mode: LRHR_PKL
-    dataroot_GT: ../datasets/DF2K-tr.pklv4
-    dataroot_LQ: ../datasets/DF2K-tr_X8.pklv4
+    dataroot_GT: ../../datasets/DF2K-tr.pklv4
+    dataroot_LQ: ../../datasets/DF2K-tr_X8.pklv4
     quant: 32
 
     use_shuffle: true
@@ -41,14 +41,14 @@ datasets:
   val:
     name: CelebA_160_va
     mode: LRHR_PKL
-    dataroot_GT: ../datasets/DIV2K-va.pklv4
-    dataroot_LQ: ../datasets/DIV2K-va_X8.pklv4
+    dataroot_GT: ../../datasets/DIV2K-va.pklv4
+    dataroot_LQ: ../../datasets/DIV2K-va_X8.pklv4
     quant: 32
     n_max: 20
 
 #### Test Settings
-dataroot_GT: ../datasets/div2k-validation-modcrop8-gt
-dataroot_LR: ../datasets/div2k-validation-modcrop8-x8
+dataroot_GT: ../../datasets/div2k-validation-modcrop8-gt
+dataroot_LR: ../../datasets/div2k-validation-modcrop8-x8
 model_path: ../pretrained_models/SRFlow_DF2K_8X.pth
 heat: 0.9 # This is the standard deviation of the latent vectors
 
