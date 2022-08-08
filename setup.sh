@@ -36,11 +36,8 @@ wget --continue http://data.vision.ee.ethz.ch/alugmayr/SRFlow/pretrained_models.
 unzip pretrained_models.zip
 rm pretrained_models.zip
 
-
 echo ""
 echo "########################################"
-echo "Start Demo"
+echo "Start having fun! :)"
 echo "########################################"
 echo ""
-
-./run_jupyter.sh
