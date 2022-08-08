@@ -40,7 +40,8 @@ class Split2d(nn.Module):
         if ft is not None:
             z = torch.cat([z, ft], dim=1)
         h = self.conv(z)
-        return thops.split_feature(h, "cross")
+        return thops.split_feature(h, "split")
+        #return thops.split_feature(h, "cross")
 
     def exp_eps(self, logs):
         return torch.exp(logs) + self.logs_eps
