@@ -9,8 +9,8 @@ echo "########################################"
 echo "Setup Virtual Environment"
 echo "########################################"
 echo ""
-alis python=python3
-alis pip=pip3
+alias python=python3
+alias pip=pip3
 python3 -m venv myenv            # Create a new virtual environment (venv) using native python3.7 venv
 source myenv/bin/activate        # This replaces the python/pip command with the ones from the venv
 which python                     # shoud output: ./myenv/bin/python
