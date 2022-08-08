@@ -48,7 +48,7 @@ datasets:
 #### Test Settings
 dataroot_GT: ../../datasets/div2k-validation-modcrop8-gt
 dataroot_LR: ../../datasets/div2k-validation-modcrop8-x4
-model_path: ../pretrained_models/SRFlow_DF2K_4X.pth
+model_path: ../../pretrained_models/SRFlow_DF2K_4X.pth
 heat: 0.9 # This is the standard deviation of the latent vectors
 
 #### network structures
@@ -77,7 +77,7 @@ network_G:
 
 #### path
 path:
-  pretrain_model_G: ../pretrained_models/RRDB_DF2K_4X.pth
+  pretrain_model_G: ../../pretrained_models/RRDB_DF2K_4X.pth
   strict_load: true
   resume_state: auto
 
