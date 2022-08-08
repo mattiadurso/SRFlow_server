@@ -123,6 +123,8 @@ def main():
 
     for lr_path, hr_path, idx_test in zip(lr_paths, hr_paths, range(len(lr_paths))):
 
+        torch.cuda.empty_cache()
+
         lr = imread(lr_path)
         hr = imread(hr_path)
 
