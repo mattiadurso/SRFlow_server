@@ -20,7 +20,7 @@ use_tb_logger: true
 model: SRFlow
 distortion: sr
 scale: 8
-gpu_ids: [ 0 ]
+gpu_ids: [ 2 ]
 
 #### datasets
 datasets:
